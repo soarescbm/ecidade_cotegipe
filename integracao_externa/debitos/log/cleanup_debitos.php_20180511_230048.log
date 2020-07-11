@@ -1,0 +1,41 @@
+
+[11/05/2018 23:00:48] 1526079648
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] *** INICIO Script cleanup_debitos.php ***
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Arquivo de Log: log/cleanup_debitos.php_20180511_230048.log
+[11/05/2018 23:00:48]     Script PHP: cleanup_debitos.php
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Criando conexao(oes) com banco de dados
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Carregando particoes para realizar limpeza (instit = 1, diasmanterdebitos = 90)
+[11/05/2018 23:00:48] 1526079648
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] *** INICIO Script cleanup_debitos.php ***
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Arquivo de Log: log/cleanup_debitos.php_20180511_230048.log
+[11/05/2018 23:00:48]     Script PHP: cleanup_debitos.php
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Criando conexao(oes) com banco de dados
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Nenhuma particao encontrada para execucao da limpeza ...
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Finalizando limpeza ...
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Inicio: 23:00:48
+[11/05/2018 23:00:48] Final.: 23:00:48
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] *** FINAL Script cleanup_debitos.php ***
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Carregando particoes para realizar limpeza (instit = 1, diasmanterdebitos = 90)
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Nenhuma particao encontrada para execucao da limpeza ...
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Finalizando limpeza ...
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Inicio: 23:00:48
+[11/05/2018 23:00:48] Final.: 23:00:48
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] *** FINAL Script cleanup_debitos.php ***
+[11/05/2018 23:00:48] 

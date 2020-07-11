@@ -1,0 +1,11 @@
+
+#php_value max_input_vars 3000 
+#php_flag short_open_tag on
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_URI} !=/server-status
+  # RewriteRule \.(jpg|jpeg|png|gif|ico|css|js)$ - [L]
+  # RewriteCond %{REQUEST_FILENAME} \.php$
+  RewriteRule ^(.*)$ FrontController.php?_path=$1 [QSA]
+</IfModule>

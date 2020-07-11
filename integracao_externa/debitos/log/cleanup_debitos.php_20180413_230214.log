@@ -1,0 +1,21 @@
+
+[13/04/2018 23:02:14] 1523660534
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] *** INICIO Script cleanup_debitos.php ***
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] Arquivo de Log: log/cleanup_debitos.php_20180413_230214.log
+[13/04/2018 23:02:14]     Script PHP: cleanup_debitos.php
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] Criando conexao(oes) com banco de dados
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] Carregando particoes para realizar limpeza (instit = 1, diasmanterdebitos = 90)
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] Nenhuma particao encontrada para execucao da limpeza ...
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] Finalizando limpeza ...
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] Inicio: 23:02:14
+[13/04/2018 23:02:14] Final.: 23:02:14
+[13/04/2018 23:02:14] 
+[13/04/2018 23:02:14] *** FINAL Script cleanup_debitos.php ***
+[13/04/2018 23:02:14] 

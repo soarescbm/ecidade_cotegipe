@@ -1,0 +1,35 @@
+
+[11/05/2018 23:00:47] 1526079647
+[11/05/2018 23:00:47] 
+[11/05/2018 23:00:47] *** INICIO Script build_debitos_thread.php ***
+[11/05/2018 23:00:47] 
+[11/05/2018 23:00:47] Arquivo de Log: log/build_debitos_thread.php_20180511_230047.log
+[11/05/2018 23:00:47]     Script PHP: build_debitos_thread.php
+[11/05/2018 23:00:47] 
+[11/05/2018 23:00:47] Criando conexao(oes) com banco de dados
+[11/05/2018 23:00:47] 1526079647
+[11/05/2018 23:00:47] 
+[11/05/2018 23:00:47] *** INICIO Script build_debitos_thread.php ***
+[11/05/2018 23:00:47] 
+[11/05/2018 23:00:47] Arquivo de Log: log/build_debitos_thread.php_20180511_230047.log
+[11/05/2018 23:00:47]     Script PHP: build_debitos_thread.php
+[11/05/2018 23:00:47] 
+[11/05/2018 23:00:47] Criando conexao(oes) com banco de dados
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Verificando existencia da tabela caixa.debitos_20180511_1_processa ...
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Verificando existencia da tabela caixa.debitos_20180511_1_processa ...
+[11/05/2018 23:00:48] Verificando se ja existe geracao da debitos para data 2018-05-11 e instituicao 1 ...
+[11/05/2018 23:00:48] Abortando geracao pois ja existe para data 2018-05-11 e instituicao 1 ...
+[11/05/2018 23:00:48] Inicio: 23:00:47
+[11/05/2018 23:00:48] Final.: 23:00:48
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] *** FINAL Script build_debitos_thread.php ***
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] Verificando se ja existe geracao da debitos para data 2018-05-11 e instituicao 1 ...
+[11/05/2018 23:00:48] Abortando geracao pois ja existe para data 2018-05-11 e instituicao 1 ...
+[11/05/2018 23:00:48] Inicio: 23:00:47
+[11/05/2018 23:00:48] Final.: 23:00:48
+[11/05/2018 23:00:48] 
+[11/05/2018 23:00:48] *** FINAL Script build_debitos_thread.php ***
+[11/05/2018 23:00:48] 

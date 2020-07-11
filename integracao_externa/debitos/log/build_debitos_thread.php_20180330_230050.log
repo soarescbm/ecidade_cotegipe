@@ -1,0 +1,96 @@
+
+[30/03/2018 23:00:50] 1522450850
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] *** INICIO Script build_debitos_thread.php ***
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] Arquivo de Log: log/build_debitos_thread.php_20180330_230050.log
+[30/03/2018 23:00:50]     Script PHP: build_debitos_thread.php
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] 1522450850
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] *** INICIO Script build_debitos_thread.php ***
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] Arquivo de Log: log/build_debitos_thread.php_20180330_230050.log
+[30/03/2018 23:00:50]     Script PHP: build_debitos_thread.php
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] Criando conexao(oes) com banco de dados
+[30/03/2018 23:00:50] Criando conexao(oes) com banco de dados
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] 
+[30/03/2018 23:00:50] Verificando existencia da tabela caixa.debitos_20180330_1_processa ...
+[30/03/2018 23:00:50] Verificando existencia da tabela caixa.debitos_20180330_1_processa ...
+[30/03/2018 23:00:50] Verificando se ja existe geracao da debitos para data 2018-03-30 e instituicao 1 ...
+[30/03/2018 23:00:50] Verificando se ja existe geracao da debitos para data 2018-03-30 e instituicao 1 ...
+[30/03/2018 23:00:50] Nao existe geracao da debitos para data 2018-03-30 e instituicao 1 ...
+[30/03/2018 23:00:50] Criando tabela caixa.debitos_20180330_1_processa ...
+[30/03/2018 23:00:50] Nao existe geracao da debitos para data 2018-03-30 e instituicao 1 ...
+[30/03/2018 23:00:50] Criando tabela caixa.debitos_20180330_1_processa ...
+[30/03/2018 23:00:50] Carregando NUMPRES para popular a tabela caixa.debitos_20180330_1_processa ...
+[30/03/2018 23:00:50] ERRO: db_query - DEBUG BACKTRACE:
+array (
+  0 => 
+  array (
+    'file' => '/var/www/html/e-cidade/integracao_externa/debitos/lib/build_debitos.php',
+    'line' => 151,
+    'function' => 'db_query',
+    'args' => 
+    array (
+      0 => NULL,
+      1 => '
+		SELECT fc_putsession(\'blocos_gera_debitos\', \'1000\');
+
+		SET random_page_cost TO 2;
+		SET seq_page_cost    TO 1;
+
+		SELECT fc_putsession(\'min_numpre\', min(k00_numpre)::text),
+		       fc_putsession(\'max_numpre\', max(k00_numpre)::text),
+		       fc_putsession(\'count_numpre\', (max(k00_numpre)-min(k00_numpre)+1)::text)
+		  FROM arreinstit
+		       NATURAL JOIN arrecad 
+		 WHERE k00_instit = 1;
+
+		BEGIN;
+
+		CREATE TABLE caixa.debitos_20180330_1_processa (
+			sequencial            INTEGER  , 
+			numpre_ini            INTEGER  , 
+			numpre_fim            INTEGER  , 
+			registros_processados INTEGER  , 
+			status                TEXT     , 
+			inicio                TIMESTAMP, 
+			fim                   TIMESTAMP, 
+			observacoes           TEXT     
+		);',
+      2 => 'log/build_debitos_thread.php_20180330_230050.log',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/var/www/html/e-cidade/integracao_externa/debitos/build_debitos_thread.php',
+    'line' => 144,
+    'function' => 'build_debitos_processa',
+    'args' => 
+    array (
+      0 => NULL,
+      1 => 'log/build_debitos_thread.php_20180330_230050.log',
+      2 => 'caixa.debitos_20180330_1_processa',
+      3 => '1',
+      4 => 1000,
+    ),
+  ),
+)
+[30/03/2018 23:00:50] ERRO: PostgreSQL (last)   - ERROR:  duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+DETAIL:  Key (typname, typnamespace)=(debitos_20180330_1_processa, 23348446) already exists.
+
+[30/03/2018 23:00:50] Tabela caixa.debitos_20180330_1_processa gerada...
+[30/03/2018 23:00:50] Verificando existencia da tabela caixa.debitos_20180330_1 ...
+[30/03/2018 23:00:50] Criando particao caixa.debitos_20180330_1 da tabela debitos ...
+[30/03/2018 23:00:50] Criando indices da tabela debitos na particao caixa.debitos_20180330_1 ...
+[30/03/2018 23:00:50] Criando constraints da tabela debitos na particao caixa.debitos_20180330_1 ...
+[30/03/2018 23:00:50] Carregando lotes a serem processados (data="2018-03-30" instit="1" where="1=1" threads="1")
+[30/03/2018 23:00:51] Atualizando estatisticas da tabela caixa.debitos_20180330_1 ...
+[30/03/2018 23:00:51] Inicio: 23:00:50
+[30/03/2018 23:00:51] Final.: 23:00:51
+[30/03/2018 23:00:51] 
+[30/03/2018 23:00:51] *** FINAL Script build_debitos_thread.php ***
+[30/03/2018 23:00:51] 

@@ -1,0 +1,8 @@
+tmp/*
+/nbproject/private/
+cache/*
+libs/db_conn*
+qrcode/*
+config/*
+extension/log/*
+.idea/*

@@ -1,0 +1,18 @@
+
+[04/05/2018 23:02:10] 1525474930
+[04/05/2018 23:02:10] 
+[04/05/2018 23:02:10] *** INICIO Script build_debitos_thread.php ***
+[04/05/2018 23:02:10] 
+[04/05/2018 23:02:10] Arquivo de Log: log/build_debitos_thread.php_20180504_230210.log
+[04/05/2018 23:02:10]     Script PHP: build_debitos_thread.php
+[04/05/2018 23:02:10] 
+[04/05/2018 23:02:10] Criando conexao(oes) com banco de dados
+[04/05/2018 23:02:10] 
+[04/05/2018 23:02:10] Verificando existencia da tabela caixa.debitos_20180504_1_processa ...
+[04/05/2018 23:02:10] Verificando se ja existe geracao da debitos para data 2018-05-04 e instituicao 1 ...
+[04/05/2018 23:02:10] Abortando geracao pois ja existe para data 2018-05-04 e instituicao 1 ...
+[04/05/2018 23:02:10] Inicio: 23:02:10
+[04/05/2018 23:02:10] Final.: 23:02:10
+[04/05/2018 23:02:10] 
+[04/05/2018 23:02:10] *** FINAL Script build_debitos_thread.php ***
+[04/05/2018 23:02:10] 

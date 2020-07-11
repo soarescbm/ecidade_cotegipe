@@ -1,0 +1,35 @@
+
+[27/04/2018 23:00:50] 1524870050
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] *** INICIO Script build_debitos_thread.php ***
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] Arquivo de Log: log/build_debitos_thread.php_20180427_230050.log
+[27/04/2018 23:00:50]     Script PHP: build_debitos_thread.php
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] Criando conexao(oes) com banco de dados
+[27/04/2018 23:00:50] 1524870050
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] *** INICIO Script build_debitos_thread.php ***
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] Arquivo de Log: log/build_debitos_thread.php_20180427_230050.log
+[27/04/2018 23:00:50]     Script PHP: build_debitos_thread.php
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] Criando conexao(oes) com banco de dados
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] Verificando existencia da tabela caixa.debitos_20180427_1_processa ...
+[27/04/2018 23:00:50] Verificando existencia da tabela caixa.debitos_20180427_1_processa ...
+[27/04/2018 23:00:50] Verificando se ja existe geracao da debitos para data 2018-04-27 e instituicao 1 ...
+[27/04/2018 23:00:50] Verificando se ja existe geracao da debitos para data 2018-04-27 e instituicao 1 ...
+[27/04/2018 23:00:50] Abortando geracao pois ja existe para data 2018-04-27 e instituicao 1 ...
+[27/04/2018 23:00:50] Inicio: 23:00:50
+[27/04/2018 23:00:50] Final.: 23:00:50
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] *** FINAL Script build_debitos_thread.php ***
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] Abortando geracao pois ja existe para data 2018-04-27 e instituicao 1 ...
+[27/04/2018 23:00:50] Inicio: 23:00:50
+[27/04/2018 23:00:50] Final.: 23:00:50
+[27/04/2018 23:00:50] 
+[27/04/2018 23:00:50] *** FINAL Script build_debitos_thread.php ***
+[27/04/2018 23:00:50] 
