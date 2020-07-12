@@ -119,6 +119,7 @@ if($sqlerro == false){
   }
   
   $rh34_where .= " r38_liq > 0";
+  $rh34_where .= "  and r38_banco = '".$rh34_codban."'";
   if($sqlerro == false){
     
 //echo "<BR> $sql";exit;

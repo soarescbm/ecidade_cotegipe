@@ -68,6 +68,12 @@ $clrotulo->label("r70_descr");
 $sqlerro = false;
 
 db_sel_instit();
+//Set o CNPJ da Entidade
+$sql_entidade = "select z01_cgccpf as cgc1,
+      z01_nome   as nomeinst1
+      from cgm where z01_numcgm = " . $r70_numcgm;
+$result_entidade = db_query($sql_entidade);
+db_fieldsmemory($result_entidade,0);
 
 $result_arqbanco=$clrharqbanco->sql_record($clrharqbanco->sql_query($rh34_codarq));    
 if($clrharqbanco->numrows>0){

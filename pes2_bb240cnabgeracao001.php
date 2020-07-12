@@ -75,7 +75,11 @@ function js_valores(){
     alert("Data de depósito não informada");
     document.form1.datadeposit_dia.select();
     return false;
-  }else{
+  }  else if(document.form1.r70_numcgm.value == ""){
+      alert("CNPJ da entidade não informado");
+      document.form1.r70_numcgm.focus();
+      return false;
+  } else {
     return true;
   }
 }
@@ -88,6 +92,7 @@ function js_emite(){
   qry += '&tiparq='+document.form1.tiparq.value;
   qry += '&qfolha='+document.form1.qfolha.value;
   qry += '&rh104_rhgeracaofolha='+document.form1.rh104_rhgeracaofolha.value;
+  qry += '&r70_numcgm='+document.form1.r70_numcgm.value;
   js_OpenJanelaIframe('top.corpo','db_iframe_geraarqbanco','pes2_bb240cnabgeracao002.php?'+qry,'Gerando Arquivo',true);
 }
 
@@ -280,6 +285,20 @@ function js_controlarodape(mostra){
       db_select("qfolha", $arr_qfolha, true, 1);
       ?>
     </td>
+  </tr>
+  <tr>
+    <td nowrap align="left" title="CNPJ"><strong>CNPJ:</strong>
+    </td>
+    <td>
+                <?php
+                  $sql = "select distinct z01_numcgm,
+            z01_cgccpf||'-'||z01_nome as z01_nome
+            from rhlota
+            inner join cgm on rhlota.r70_numcgm = cgm.z01_numcgm";
+                  $result = db_query($sql);
+                  db_selectrecord("r70_numcgm", $result, true, @$db_opcao, "", "", "", "0",  "", "2");
+                  ?>
+      </td>
   </tr>
   <tr>
     <td>&nbsp;</td>

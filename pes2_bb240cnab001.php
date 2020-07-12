@@ -80,7 +80,12 @@ if(isset($emite2)){
         }else if(js_diferenca_datas(getDateInDatabaseFormat($F('datagera')), getDateInDatabaseFormat($F('datadeposit')),3) == true){
           alert("Campo Data de Depósito deve ser igual ou maior que a Data de Geração.");
           return false;
-        }else{
+        } else if(document.form1.r70_numcgm.value == ""){
+          alert("CNPJ da entidade não informado");
+          document.form1.r70_numcgm.focus();
+          return false;
+        }
+         else{
           return true;
         }
       }
@@ -94,6 +99,7 @@ if(isset($emite2)){
         qry += '&tiparq='+document.form1.tiparq.value;
         qry += '&qfolha='+document.form1.qfolha.value;
         qry += '&opt_todosbcos='+document.form1.opt_todosbcos.value;
+        qry += '&r70_numcgm='+document.form1.r70_numcgm.value;
         js_OpenJanelaIframe('CurrentWindow.corpo','db_iframe_geraarqbanco','pes2_bb240cnab002.php?'+qry,'Gerando Arquivo',true);
       }
       
@@ -161,7 +167,9 @@ if(isset($emite2)){
             <td>
               <?  
               (!isset($GLOBALS['opt_todosbcos'])) ? $GLOBALS['opt_todosbcos'] = '1' : '';
-              $arr_tipobanco = Array("1"=>"Banco do Brasil", "0"=>"Todos");
+              $arr_tipobanco = Array("1"=>"Banco do Brasil"
+              //, "1"=>"Todos"
+              );
               db_select("opt_todosbcos", $arr_tipobanco, true, 1, 'style="max-width: 125px;"');
               ?>
             </td>
@@ -292,6 +300,21 @@ if(isset($emite2)){
               db_select("qfolha", $arr_qfolha, true, 1);
               ?>
             </td>
+          </tr>
+          <tr>
+            <td nowrap align="left" title="CNPJ"><strong>CNPJ:</strong>
+            </td>
+            <td>
+              <?php
+                $sql = "select distinct z01_numcgm,
+          z01_cgccpf||'-'||z01_nome as z01_nome
+          from rhlota
+          inner join cgm on rhlota.r70_numcgm = cgm.z01_numcgm";
+                $result = db_query($sql);
+                db_selectrecord("r70_numcgm", $result, true, @$db_opcao, "", "", "", "0",  "", "2");
+                ?>
+            </td>
+          </tr>
       </table>
     </fieldset>
     <input name="emite2" id="emite2" type="submit" value="Processar" onclick="return js_valores();" >
