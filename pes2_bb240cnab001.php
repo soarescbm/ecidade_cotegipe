@@ -311,7 +311,7 @@ if(isset($emite2)){
           from rhlota
           inner join cgm on rhlota.r70_numcgm = cgm.z01_numcgm";
                 $result = db_query($sql);
-                db_selectrecord("r70_numcgm", $result, true, @$db_opcao, "", "", "", "0",  "", "2");
+                db_select("r70_numcgm", $result, true, 1);
                 ?>
             </td>
           </tr>
