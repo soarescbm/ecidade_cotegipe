@@ -311,7 +311,13 @@ if(isset($emite2)){
           from rhlota
           inner join cgm on rhlota.r70_numcgm = cgm.z01_numcgm";
                 $result = db_query($sql);
-                db_select("r70_numcgm", $result, true, 1);
+                $numrows = pg_num_rows($result);
+                $options = array();
+                for($i = 0; $i < $numrows; $i++ ) {
+                  db_fieldsmemory($result,0);
+                  $options[$z01_numcgm] = $z01_nome
+                }
+                db_select("r70_numcgm",  $options, true, 1);
                 ?>
             </td>
           </tr>
